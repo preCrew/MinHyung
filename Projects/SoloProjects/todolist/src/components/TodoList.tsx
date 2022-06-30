@@ -25,12 +25,21 @@ const TodoList = () => {
     ]);
     const nextId = useRef(4);
 
+    const handleClickCheckBox = (id: number) => {
+        // 해당 id를 가진 컴포넌트의 completed 상태 변경
+        setTasks(tasks.map(task => 
+            task.id === id ? {...task, completed: !task.completed} : task
+        ));
+    }
+    
     return (
         <div>
             {tasks.map( task => 
                 <Item 
+                    id = {task.id}
                     text = {task.text}
                     completed={task.completed}
+                    onClickCheckBox={handleClickCheckBox}
                 />
             )}
         </div>
