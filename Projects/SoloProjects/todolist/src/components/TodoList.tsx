@@ -61,6 +61,7 @@ const TodoList = () => {
         <>
             {tasks.map( task => 
                 <Item 
+                    key={`${task.id}task`}
                     id = {task.id}
                     text = {task.text}
                     completed={task.completed}
