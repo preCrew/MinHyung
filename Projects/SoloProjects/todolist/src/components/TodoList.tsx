@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import InputText from './InputText';
 import Item from './Item';
+import './styles/todoList.css';
 
 interface TList {
     id: number;
@@ -58,7 +59,7 @@ const TodoList = () => {
     }
 
     return (
-        <>
+        <div className="todoList">
             {tasks.map( task => 
                 <Item 
                     key={`${task.id}task`}
@@ -74,7 +75,7 @@ const TodoList = () => {
                 onKeyDown={handleInputTextKeyDown}
                 inputText={inputText}
             />
-        </>
+        </div>
     );
 }
 
