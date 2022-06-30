@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react';
+import InputText from './InputText';
 import Item from './Item';
 
 interface TodoListProps {
@@ -36,7 +37,7 @@ const TodoList = () => {
         setTasks(tasks.filter( task => task.id !== id));
     }
     return (
-        <div>
+        <>
             {tasks.map( task => 
                 <Item 
                     id = {task.id}
@@ -46,7 +47,8 @@ const TodoList = () => {
                     onClickDeleteButton={handleClickDeleteButton}
                 />
             )}
-        </div>
+            <InputText/>
+        </>
     );
 }
 
