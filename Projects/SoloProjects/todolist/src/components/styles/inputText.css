@@ -7,8 +7,6 @@
     text-align: center;
 
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
 }
 .inputText:focus {
     outline: none;

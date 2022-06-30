@@ -59,6 +59,7 @@ const TodoList = () => {
     }
 
     return (
+        <>
         <div className="todoList">
             {tasks.map( task => 
                 <Item 
@@ -70,12 +71,14 @@ const TodoList = () => {
                     onClickDeleteButton={handleClickDeleteButton}
                 />
             )}
-            <InputText
+        </div>
+
+        <InputText
                 onChange={handleInputTextChange}
                 onKeyDown={handleInputTextKeyDown}
                 inputText={inputText}
             />
-        </div>
+        </>
     );
 }
 

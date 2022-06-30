@@ -8,8 +8,8 @@
 }
 .appContainer {
     width: 500px;
-    height: 800px;
+    height: 750px;
     background-color: rgb(255, 241, 253);
 
-    position: relative;
+    position: absolute;
 }
