@@ -2,6 +2,7 @@
 ## 협업프로젝트
 
 ## 솔로프로젝트
+- [투두리스트](/Projects/SoloProjects/todolist/)
 ## 토이프로젝트
 
 
