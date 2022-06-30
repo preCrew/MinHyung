@@ -31,7 +31,10 @@ const TodoList = () => {
             task.id === id ? {...task, completed: !task.completed} : task
         ));
     }
-    
+    const handleClickDeleteButton = (id: number) => {
+        // 해당 id를 가진 컴포넌트 삭제
+        setTasks(tasks.filter( task => task.id !== id));
+    }
     return (
         <div>
             {tasks.map( task => 
@@ -40,6 +43,7 @@ const TodoList = () => {
                     text = {task.text}
                     completed={task.completed}
                     onClickCheckBox={handleClickCheckBox}
+                    onClickDeleteButton={handleClickDeleteButton}
                 />
             )}
         </div>

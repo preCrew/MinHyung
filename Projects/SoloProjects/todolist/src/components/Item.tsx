@@ -6,6 +6,7 @@ import Text from './Text';
 
 interface ItemProps {
     onClickCheckBox(id: number): void;
+    onClickDeleteButton(id: number): void;
     completed?: boolean;
     text: string;
     id: number;
@@ -13,6 +14,7 @@ interface ItemProps {
 
 const Item = ({
     onClickCheckBox,
+    onClickDeleteButton,
     completed,
     text,
     id,
@@ -22,11 +24,16 @@ const Item = ({
     return (
         <>
             <div className="itemContainer">
-                <CheckBox checked={completed} onClick={()=>onClickCheckBox(id)}/>
+                <CheckBox 
+                    checked={completed} 
+                    onClick={() => onClickCheckBox(id)}
+                />
                 <Text completed={completed}>
                     {text}
                 </Text>
-                <DeleteButton/>
+                <DeleteButton
+                    onClick={() => onClickDeleteButton(id)}
+                />
             </div>
         </>
     );
