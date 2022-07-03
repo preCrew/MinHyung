@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/text.css';
+import '../styles/text.css';
 
 interface TextProps {
     completed?: boolean;

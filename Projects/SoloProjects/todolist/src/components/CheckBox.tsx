@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/checkBox.css';
+import '../styles/checkBox.css';
 
 interface CheckBoxProps {
     checked?: boolean;

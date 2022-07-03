@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import InputText from './InputText';
 import Item from './Item';
-import './styles/todoList.css';
+import '../styles/todoList.css';
 
 interface TList {
     id: number;

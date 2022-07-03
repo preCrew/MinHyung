@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/item.css';
+import '../styles/item.css';
 import CheckBox from './CheckBox';
 import DeleteButton from './DeleteButton';
 import Text from './Text';

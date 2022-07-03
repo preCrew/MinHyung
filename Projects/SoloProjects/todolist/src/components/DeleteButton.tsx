@@ -1,6 +1,6 @@
 import React from 'react';
 import{BsTrash} from 'react-icons/bs/';
-import './styles/deleteButton.css'
+import '../styles/deleteButton.css'
 
 interface DeleteButtonProps {
     onClick? (): void;
