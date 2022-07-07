@@ -59,20 +59,20 @@ const TodoList = () => {
     }
 
     return (
-        <div className="todoListContainer">
+        <div className="appContainer">
 
-        <div className="todoList">
-            {tasks.map( task => 
-                <Item 
-                    key={`${task.id}task`}
-                    id = {task.id}
-                    text = {task.text}
-                    completed={task.completed}
-                    onClickCheckBox={handleClickCheckBox}
-                    onClickDeleteButton={handleClickDeleteButton}
-                />
-            )}
-        </div>
+            <div className="todoList">
+                {tasks.map( task => 
+                    <Item 
+                        key={`${task.id}task`}
+                        id = {task.id}
+                        text = {task.text}
+                        completed={task.completed}
+                        onClickCheckBox={handleClickCheckBox}
+                        onClickDeleteButton={handleClickDeleteButton}
+                    />
+                )}
+            </div>
 
         <InputText
                 onChange={handleInputTextChange}

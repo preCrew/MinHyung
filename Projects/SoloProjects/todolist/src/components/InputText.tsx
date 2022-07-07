@@ -13,7 +13,7 @@ const InputText = ({
     inputText
 }:InputTextProps) => {
     return (
-        <>
+        // <div className="inputTextContainer">
             <input type="text"
                 className="inputText"  
                 placeholder='내용을 입력후 엔터'
@@ -21,7 +21,7 @@ const InputText = ({
                 onKeyDown={e => onKeyDown(e)}
                 value={inputText}
             />
-        </>
+        // </div>
     );
 }
 
