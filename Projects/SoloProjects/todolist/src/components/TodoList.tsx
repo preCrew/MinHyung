@@ -46,7 +46,8 @@ const TodoList = () => {
     }
     // 입력값 엔터 핸들러
     const handleInputTextKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter'){
+        if (e.key === 'Enter' && e.nativeEvent.isComposing === false){
+            
             const newList: TList = {
                 id: nextId.current,
                 text: inputText,
@@ -57,6 +58,7 @@ const TodoList = () => {
             nextId.current += 1;
         }
     }
+    console.log(tasks);
 
     return (
         <div className='appContainer'>
