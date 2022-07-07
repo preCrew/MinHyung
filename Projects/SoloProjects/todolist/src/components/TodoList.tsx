@@ -59,7 +59,7 @@ const TodoList = () => {
     }
 
     return (
-        <div className="appContainer">
+        <div className="todoListContainer">
 
             <div className="todoList">
                 {tasks.map( task => 
