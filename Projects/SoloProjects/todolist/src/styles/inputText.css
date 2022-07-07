@@ -2,7 +2,8 @@
     width: 100%;
     height: 50px;
 
-    border: 0.1px solid black;
+    border-radius: 0 0 30px 30px;
+    border: 0.1px solid rgb(193, 185, 185);
     font-size: 18px;
     text-align: center;
 
@@ -10,5 +11,5 @@
 }
 .inputText:focus {
     outline: none;
-    border: 1px solid black;
+    border: 1px solid rgb(130, 124, 124);;
 }
