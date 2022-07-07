@@ -59,7 +59,8 @@ const TodoList = () => {
     }
 
     return (
-        <>
+        <div className="todoListContainer">
+
         <div className="todoList">
             {tasks.map( task => 
                 <Item 
@@ -78,7 +79,7 @@ const TodoList = () => {
                 onKeyDown={handleInputTextKeyDown}
                 inputText={inputText}
             />
-        </>
+        </div>
     );
 }
 

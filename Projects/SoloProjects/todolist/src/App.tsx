@@ -6,9 +6,7 @@ const App = () => {
     return (
         <>
             <div className="mainContainer">
-                <div className="appContainer">
                     <TodoList/>
-                </div>
             </div>
         </>
     );
